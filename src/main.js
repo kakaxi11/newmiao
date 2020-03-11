@@ -6,6 +6,8 @@ import axios from 'axios'
 
 Vue.use(axios)
 
+// axios.defaults.baseURL = 
+
 Vue.prototype.$http = axios //将axios挂载到 全局
 
 

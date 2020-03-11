@@ -1,22 +1,17 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import cinemaRouter from './cinema'
+import mineRouter from './mine'
+import movieRouter from './movie'
 
 Vue.use(VueRouter)
 
 const routes = [
+  cinemaRouter,
+  mineRouter,
+  movieRouter,
   {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/', redirect: '/mine' 
   }
 ]
 
@@ -25,5 +20,7 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 })
+
+// 为了方便以后的扩展，以及防止该文件过大。我们把每个路由文件分离出去
 
 export default router

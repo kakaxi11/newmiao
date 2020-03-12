@@ -4,6 +4,7 @@ import cinemaRouter from './cinema'
 import mineRouter from './mine'
 import movieRouter from './movie'
 
+
 Vue.use(VueRouter)
 
 const routes = [

@@ -2,17 +2,14 @@
   <div id="kaka">
 <heads>喵喵电影</heads>
 <ul>
-   <li>城市</li>   
+    <router-link to="/city" tag="li">城市</router-link>
    <!-- 设计成子路由 router-link -->
   <li>正在热映</li>
   <li>即将上映</li>
   <li>搜索</li>
 </ul>
-
-
-
+<router-view></router-view>
 <football ></football>
-
   </div>
 
 </template>
@@ -30,7 +27,6 @@ export default {
 
 <style scoped>
 ul {
-
 height: 45px;
 display:flex;
 justify-content: space-around;

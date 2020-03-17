@@ -12,13 +12,16 @@ export default {
 
 <style>
 #head {
-height: 60px;
+position: fixed;
+height: 50px;
+width: 100%;
 background-color:rgb(223, 45, 45);
 text-align: center;
 color: blanchedalmond;
 font-size:20px;
 font-weight:inherit;
 line-height: 50px;
+z-index: 99;
 }
 
 </style>

@@ -37,11 +37,11 @@ div img {
 }
 .router-link-active {
   text-decoration: none;
-  color: red;
+  text-shadow: lightslategray;
 }
 a {
   text-decoration: none;    
-  color: black;
+  color: rgb(0, 0, 0);
   /* 去掉所有链接的下划线  */
 }
 #foot div

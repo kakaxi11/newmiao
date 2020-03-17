@@ -1,8 +1,16 @@
 <template>
   <div id="kaka">
 <heads>我的喵喵</heads>
-<football ></football>
+<div class="zw"></div>
+<mt-field label="用户名" placeholder="Input username" v-model="username"></mt-field>
+<mt-field label="密码" placeholder="Input password" type="password" v-model="password"></mt-field>
 
+<mt-button plain  type ="danger">登录</mt-button>
+
+
+
+
+<football ></football>
   </div>
 </template>
 
@@ -10,6 +18,14 @@
 import heads from '../../components/head.vue'
 import football from '../../components/footer.vue'
 export default {
+  data () {
+    return {
+      username:'',
+      password:''
+    }
+  },
+
+
   components:{
     football,
     heads
@@ -18,20 +34,15 @@ export default {
 </script>
 
 <style scoped>
-/* div {
-
-
+.zw{
+  height: 55px;
 }
- p {
-  /* height: 50px;
-  width: 100%;
-  display: flex;
+.mint-button--normal{
 
-/* margin-top: 500px; */
-/* flex-direction: row-reverse; */
-/* align-items:flex-start; */
-/* justify-content: space-around;
-/* align-items:flex-end; */
+  width:130px;
+  margin-left:30%;
+                    /* 有些组件的类名不是引入时的名字，需要到浏览器里自己点开去找。 */
+}
 
 
 

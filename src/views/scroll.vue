@@ -63,14 +63,18 @@
 <style scoped>
 .wrapper {
     position: fixed;
-    top: 88px;
+    top: 118px;
     width: 100%;
+ 
     /* 父盒子必须fixed，并且有一个高度 */
     height: 1px;
     
+    
 }
 .content {
-    height:1350px;
+    height:1410px;
+  
+    /* width: 100%; */
 /* 滚动的内容1350px */
 }
 </style>

@@ -27,7 +27,7 @@
         <br>
         </div>
         
-        <van-tag color="#f2826a">购票</van-tag>
+        <van-tag color="#f2826a" @click="detail('这里传入itme的id，然后进入详情页，created获取数据')">购票</van-tag>
         <div class="zhanwei2"></div>
         
       
@@ -73,6 +73,12 @@ export default {
         this.movieList = res.data.movieList
     })
   
+    },
+    methods:{
+        detail(){
+        this.$router.push('movie/detail')
+
+        }
     }
 }
 </script>

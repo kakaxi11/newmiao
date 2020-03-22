@@ -17,6 +17,7 @@
 
 
 <football ></football>
+<router-view name="detail"></router-view>
   </div>
 
 </template>
@@ -40,7 +41,7 @@ background-color: rgba(255, 255, 255, 0.925);
 position: fixed;
 height: 30px;
 width: 100%;
-font-size:20px;
+font-size:18px;
 font-weight:500;
 line-height: 30px;
 z-index: 9;
